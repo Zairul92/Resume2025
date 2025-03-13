@@ -1,0 +1,151 @@
+/* Gaya umum untuk resume */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh; /* Pastikan badan halaman mempunyai ketinggian sekurang-kurangnya 100% */
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Menyembunyikan scroll mendatar */
+}
+
+/* Gaya footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Pastikan footer berada di bawah */
+    font-size: 14px; /* Saiz font */
+    font-family: Arial, sans-serif; /* Jenis font */
+}
+
+/* Pastikan teks copyright bergerak */
+footer p {
+    margin: 0;
+    animation: moveText 10s linear infinite; /* Menambah animasi */
+}
+
+/* Animasi untuk pergerakan teks copyright */
+@keyframes moveText {
+    0% {
+        transform: translateX(100%); /* Mula dari luar kanan */
+    }
+    100% {
+        transform: translateX(-100%); /* Bergerak ke luar kiri */
+    }
+}
+
+/* Bahagian header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Untuk kedudukan butang WhatsApp */
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* Gaya untuk gambar profil */
+.profile-img {
+    width: 200px;  /* Sesuaikan dengan lebar gambar yang anda mahu */
+    height: auto;  /* Menyimpan nisbah aspek gambar */
+    border-radius: 50%;  /* Gambar berbentuk bulat */
+    display: block;
+    margin: 20px auto;
+}
+
+/* Gaya untuk butang WhatsApp */
+.whatsapp-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Gaya untuk bahagian ringkasan */
+.summary {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk bahagian pengalaman kerja */
+.experience {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.job ul {
+    margin: 5px 0;
+}
+
+.job li {
+    margin-left: 20px;
+}
+
+/* Gaya untuk bahagian pendidikan */
+.education {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.degree {
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk bahagian kemahiran */
+.skills {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
